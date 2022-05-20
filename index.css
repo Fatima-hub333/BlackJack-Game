@@ -21,6 +21,25 @@ h1 {
 #message-el {
   font-style: italic;
 }
+
 p {
   padding: 10px;
+}
+
+button {
+  color: #016f32;
+  width: 150px;
+  background-color: goldenrod;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 2px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+button:active {
+  border: 4px solid black;
 }
