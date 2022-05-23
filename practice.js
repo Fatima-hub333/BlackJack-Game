@@ -146,3 +146,63 @@ let chairs = [7, 3, 9];
 for (let i = 0; i < chairs.length; i += 1) {
   console.log(chairs[i]);
 }
+
+let sentence = ["Hello", "my", "name", "is", "Fatima"];
+let greetingEl = document.getElementById("greeting-el");
+
+// Render the sentence in the greetingEl paragraph using a for loop and .textContent
+for (let i = 0; i < sentence.length; i++) {
+  greetingEl.textContent += sentence[i] + " ";
+
+}
+
+let player1Time = 102;
+let player2Time = 107;
+
+function getFastRaceTime() {
+  if (player1Time < player2Time) {
+    return player1Time;
+  } else if (player2Time < player1Time) {
+    return player2Time;
+  } else {
+    return player1Time;
+  }
+}
+
+// let fastestRace = getFastRaceTime();
+// console.log(fastestRace);
+
+// Write a function that returns the total race time
+// Call/invoke the function and store the returned value in a new variable
+// Finally, log the variable out
+
+function getTotalRaceTime() {
+  return player1Time + player2Time;
+}
+
+let totalTime = getTotalRaceTime();
+console.log(totalTime);
+
+//Why Generate Random Numbers
+let randomNumber = Math.random() * 6;
+console.log(randomNumber);
+
+//Dice game
+function rollDice() {
+  let randomNumber = Math.floor(Math.random() * 6) + 1;
+  return randomNumber;
+}
+
+console.log(rollDice());
+
+//Logical Operators
+let hasCompletedCourse = true;
+let givesCertificate = true;
+
+if (hasCompletedCourse === true && givesCertificate === true ) {
+    generateCertificate();
+}
+
+function generateCertificate() {
+  console.log("Generating Certificate......");
+}
