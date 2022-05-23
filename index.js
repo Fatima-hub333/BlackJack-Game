@@ -54,35 +54,18 @@ function renderGame() {
 }
 
 function newCard() {
+  //Only allow the player to get a new card if she is alie and doesnot have blackJack
+  if (isAlive === true && hasBlackJack === false) {
   let card = getRandomCard();
   sum += card;
   cards.push(card);
   renderGame();
+  }
 }
 
-let hasSolvedChallenge = false;
-let hasHintsLeft = false;
 
-if (hasSolvedChallenge === false && hasHintsLeft === false) {
-  showSolution();
-}
 
-function showSolution() {
-  console.log("Showing the solution....")
-}
 
-//Loop practice
-
-let likesDocumentaries = true;
-let likesStartups = true;
-
-if (likesDocumentaries === true || likesStartups === true) {
-  recommendMovie();
-}
-
-function recommendMovie() {
-  console.log("Hey, check out this new film we think you will like.")
-}
 
 
 
