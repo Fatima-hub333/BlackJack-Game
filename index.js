@@ -68,6 +68,22 @@ function newCard() {
   }
 }
 
+// Objects Practice
+// Objects - store data in-depth - composite / complex data type
+// key-value pairs
+
+// let course = {
+//   title: "Learn CSS GRid for Free",
+//   lessons: 16,
+//   creator: "Fatima",
+//   length: 63,
+//   level: 2,
+//   isFree: true,
+//   tags: ["html", "css"]
+// }
+
+// console.log(course.tags)
+
 
 
 
