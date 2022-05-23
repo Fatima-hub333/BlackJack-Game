@@ -1,3 +1,11 @@
+let player = {
+  name: "Fatima", chips: 200,
+  sayHello: function () {
+  console.log("Heissan!")
+  }
+}
+
+player.sayHello()
 let cards = [] //array - ordered list of items
 let sum = 0;
 let hasBlackJack = false;
@@ -7,11 +15,6 @@ let messageEl = document.getElementById('message-el');
 let sumEl = document.getElementById('sum-el');
 let cardsEl = document.getElementById('cards-el');
 // let sumEl = document.querySelector('#sum-el');
-
-let player = {
-  name: "Fatima",
-  chips: 145
-}
 
 let playerEl = document.getElementById('player-el');
 playerEl.textContent = player.name + ": $" + player.chips;
